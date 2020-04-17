@@ -19,12 +19,12 @@ from keras.callbacks import ModelCheckpoint
 from keras.utils import multi_gpu_model 
 
 # project imports
-import datagenerators
-import networks
-import losses
+import src.datagenerators as datagenerators
+import src.networks as networks
+import src.losses as losses
 
 sys.path.append('../ext/neuron')
-import neuron.callbacks as nrn_gen
+import src.neuron.callbacks as nrn_gen
 
 
 def train(data_dir,

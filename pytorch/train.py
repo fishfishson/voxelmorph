@@ -18,9 +18,9 @@ import torch
 from torch.optim import Adam
 
 # internal imports
-from model import cvpr2018_net
-import datagenerators
-import losses
+from pytorch.model import cvpr2018_net
+import pytorch.datagenerators
+import pytorch.losses
 
 
 def train(gpu,
